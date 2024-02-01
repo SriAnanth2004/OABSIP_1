@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0C1D36;
+    color: #ffff;
+    padding: 20px 20px;
+}
+#homepage{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+}
+#backgroundimg{
+    height: 80vh;
+    width: 100vh;
+}
+#background{
+    display: flex;
+    align-items: center;
+}
+#logo{
+    height: 20vh;
+    width: 30vh;
+    margin-left: 70vh;
+}
+#resthomepage{
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-size: 50px;
+    margin-top: 10vh;
+}
+h1 span{
+    color: #F9CC0B;
+}
+/*-------------------------------------services-----------------------*/
+#services{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+}
+#backgroundimg2{
+    margin-top: 50px;
+    border-radius: 20px;
+    height: 50vh;
+    width: 50vh;
+}
+#interior{
+    margin-top: 50px;
+    border-radius: 20px;
+    height: 50vh;
+    width: 50vh;
+}
+#restservices h1{
+    color: #F9CC0B;
+}
+#restservices{
+    flex-basis: 60%;
+}
+h2{
+    justify-content: space-evenly;
+    margin-top: 5vh;
+    margin-right: 8vh;
+    font-size: 25px;
+    font-weight: 10px;
+}
+#background2{
+    display: flex;
+    flex-direction: column;
+}
+/*------------------------pricing---------------------------*/
+#prices{
+    padding: 80px 0;
+}
+table{
+    margin-top: 50px;
+    width: 100%;
+    border-collapse: collapse;
+}
+th,td{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th{
+    background-color: #f2f2f2;
+}
+thead{
+    color: #0C1D36;
+}
+#prices h1{
+    color: #F9CC0B;
+}
+/*-------------------------------contact--------------------------*/
+#contact h1{
+    margin-bottom: 50px;
+    color: #F9CC0B;
+}
+/* For small screens */
+@media (max-width: 768px) {
+    #homepage {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+    }
+    #background {
+        margin-bottom: 20px;
+    }
+    #logo {
+        margin-left: 0;
+    }
+    h1 {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    #services {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #background2 {
+        margin-top: 20px;
+    }
+    #prices table {
+        margin: 20px 0;
+    }
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <script src="https:kit.fontawesome.com/5492403780.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="homepage">
+        <div id="background">
+            <img src="images/background.png" id="backgroundimg">
+        </div>
+        <div id="resthomepage">
+            <img src="images/logo.png" id="logo">
+            <h1>We provide our services right to your home so you may drive a <span>clean car</span> for <span>less money!</span></h1>
+        </div>
+    </div>
+<!---------------------------services--------------------------------------->
+    <div id="services">
+        <div id="restservices">
+            <h1>Services</h1>
+            <h2>We come to your homes and clean your cars exteriors and interiors as well.<br>
+            Accorging to the package choosen the number of days the car will be washed per week.</h2>
+        </div>
+        <div id="background2">
+            <img src="images/car wash.png" id="backgroundimg2">
+            <img src="images/interior war.png" id="interior">
+        </div>
+    </div>
+<!-----------------------------pricing----------------------------->
+    <div id="prices">
+        <h1>Costs</h1>
+        <div id="restprices">
+            <table>
+                <thead>
+                    <tr>
+                        <th>2days a week</th>
+                        <th>4days a week</th>
+                        <th>6days a week</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>rs.2,000-sedan</td>
+                        <td>rs.4,000-sedan</td>
+                        <td>rs.4,500-sedan</td>
+                    </tr>
+                    <tr>
+                        <td>rs.2,500-SUV</td>
+                        <td>rs.4,500-SUV</td>
+                        <td>rs.5,000-SUV</td>
+                    </tr>
+                    <tr>
+                        <td>rs.3,000-7seater & XUV</td>
+                        <td>rs.5,000-7seater & XUV</td>
+                        <td>rs.5,500-7seater & XUV</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+<!--------------contact----------------------->    
+    <div id="contact">
+        <h1>Get in Touch</h1>
+            <p><i class="fa-brands fa-whatsapp"></i>  8309015476</p>
+            <p><i class="fa-solid fa-envelope"></i></i>  k_vara@rediffmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>  8309015476</p>
+    </div>
+</body>
+</html>
